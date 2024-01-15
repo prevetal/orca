@@ -2443,6 +2443,12 @@ aside
 }
 
 
+.form .file input
+{
+    display: none;
+}
+
+
 .form .file label
 {
     font-size: 14px;

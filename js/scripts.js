@@ -515,7 +515,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	if (fileInputs) {
 		fileInputs.forEach(el => {
-			el.addEventListener('change', () => el.closest('.file').querySelector('label .path').innerText = el.value)
+			el.addEventListener('change', () => el.closest('.file').querySelector('label span').innerText = el.value)
 		})
 	}
 
