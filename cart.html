@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="/favicon.png">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#1f394c">
+		<meta name="theme-color" content="#1f394c">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="mob_close_btn"></button>
+
+					<div class="scroll">
+						<div class="data">
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+							</div>
+
+							<div class="cont row">
+								<div class="links">
+									<div><a href="/">О компании</a></div>
+									<div><a href="/">Новости</a></div>
+									<div><a href="/">Доставка и оплата</a></div>
+									<div><a href="/">Контакты</a></div>
+								</div>
+
+								<div class="phones">
+									<div><a href="tel:89152570707">8 915 257-07-07</a></div>
+
+									<div><a href="tel:89152570000" class="whatsapp_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									</a></div>
+
+									<div><a href="tel:89152570000">8 915 257-00-00</a></div>
+								</div>
+							</div>
+
+							<div class="cont row">
+								<div class="search">
+									<form action="">
+										<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+										<button type="submit" class="submit_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+										</button>
+									</form>
+								</div>
+
+								<div class="col">
+									<button class="callback_btn modal_btn" data-modal="callback_modal">Обратный звонок</button>
+
+									<div class="account">
+										<!-- <a href="/">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+											<span>Кабинет</span>
+										</a> -->
+
+										<button class="btn modal_btn" data-modal="login_modal">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+											<span>Кабинет</span>
+										</button>
+									</div>
+
+									<div class="favorite">
+										<a href="/">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span class="count">13</span>
+											<span>Избранное</span>
+										</a>
+									</div>
+
+									<div class="cart">
+										<a href="/">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+											<span class="count">3</span>
+											<span>15 600 тнг</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cont">
+							<nav class="categories">
+								<div class="col">
+									<div class="category modal_cont">
+										<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+											<span>Каталог</span>
+										</button>
+
+										<div class="mini_modal" id="catalog_modal">
+											<div class="cont">
+												<div class="row">
+													<div>
+														<div class="main">
+															<a href="/">Одежда</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Куртки, Дождевики</a></div>
+															<div><a href="/">Толстовки и худи</a></div>
+															<div><a href="/">Футболки</a></div>
+															<div><a href="/">Брюки, комбинезоны и шорты</a></div>
+															<div><a href="/">Термобелье</a></div>
+															<div><a href="/">Костюмы</a></div>
+															<div><a href="/">Рубашки</a></div>
+															<div><a href="/">Головные уборы</a></div>
+															<div><a href="/">Перчатки</a></div>
+															<div><a href="/">Носки</a></div>
+															<div><a href="/">Аксессуары</a></div>
+														</div>
+													</div>
+
+													<div>
+														<div class="main">
+															<a href="/">Обувь</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Вейдерсы и забродники</a></div>
+															<div><a href="/">Сапоги</a></div>
+															<div><a href="/">Ботинки и полуботинки</a></div>
+															<div><a href="/">Кроссовки</a></div>
+															<div><a href="/">Кеды</a></div>
+															<div><a href="/">Шлёпанцы и тапочки</a></div>
+															<div><a href="/">Гамаши</a></div>
+															<div><a href="/">Стельки для обуви</a></div>
+															<div><a href="/">Аксессуары для обуви</a></div>
+														</div>
+													</div>
+
+													<div>
+														<div class="main">
+															<a href="/">Туризм</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Палатки и тенты</a></div>
+															<div><a href="/">Спальные мешки</a></div>
+															<div><a href="/">Коврики (Карематы)</a></div>
+															<div><a href="/">Рюкзаки</a></div>
+															<div><a href="/">Сумки</a></div>
+															<div><a href="/">Ножи и топоры</a></div>
+															<div><a href="/">Посуда и термосы</a></div>
+															<div><a href="/">Кемпинговая мебель</a></div>
+															<div><a href="/">Фонари</a></div>
+															<div><a href="/">Трекинговые палки</a></div>
+														</div>
+													</div>
+
+													<div>
+														<div class="main">
+															<a href="/">Рыбалка</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Троллинг и даунриггеры</a></div>
+															<div><a href="/">Эхолоты, кораблики и аксессуары</a></div>
+															<div><a href="/">Держатели, крепления, треноги для удочек</a></div>
+															<div><a href="/">Удилища штекерные</a></div>
+															<div><a href="/">Удилища телескопические</a></div>
+															<div><a href="/">Катушки с передним фрикционом</a></div>
+															<div><a href="/">Катушки с задним фрикционом</a></div>
+															<div><a href="/">Катушки мультипликаторные</a></div>
+															<div><a href="/">Катушки нахлыстовые</a></div>
+															<div><a href="/">Леска</a></div>
+															<div><a href="/">Зимняя леска</a></div>
+															<div><a href="/">Приманка</a></div>
+															<div><a href="/">Разное для рыбалки</a></div>
+															<div><a href="/">Разное для зимней рыбалки</a></div>
+															<div><a href="/">Удилища зимние</a></div>
+															<div><a href="/">Поплавки</a></div>
+															<div><a href="/">Чехлы кейсы</a></div>
+															<div><a href="/">Блесны</a></div>
+															<div><a href="/">Крючки</a></div>
+															<div><a href="/">Катушки зимние</a></div>
+															<div><a href="/">Показать еще</a></div>
+														</div>
+													</div>
+
+													<div>
+														<div class="main">
+															<a href="/">Охота и аксессуары для оружия</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Чехлы и кейсы, ремни, патронташи, антабки</a></div>
+															<div><a href="/">Аксессуары для пневматического оружия</a></div>
+															<div><a href="/">Аксессуары для арбалетов и луков</a></div>
+															<div><a href="/">Аксессуары для оружия</a></div>
+															<div><a href="/">Сошки</a></div>
+															<div><a href="/">Оптика и аксессуары</a></div>
+															<div><a href="/">Лазерные целеуказатели</a></div>
+															<div><a href="/">Мишени</a></div>
+															<div><a href="/">Уход за оружием и Инструменты</a></div>
+															<div><a href="/">Станки пристрелочные и упоры</a></div>
+															<div><a href="/">Наушники и очки</a></div>
+															<div><a href="/">Снаряжение патронов</a></div>
+															<div><a href="/">Подсадные утки, гуси и т.д.</a></div>
+															<div><a href="/">Манки</a></div>
+															<div><a href="/">Аксессуары для собак</a></div>
+															<div><a href="/">Скрадки</a></div>
+															<div><a href="/">Охотничьи камеры</a></div>
+															<div><a href="/">Капканы</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="category">
+										<a href="/">Бренды</a>
+									</div>
+
+									<div class="category">
+										<a href="/">Охота</a>
+									</div>
+
+									<div class="category">
+										<a href="/">Рыбалка</a>
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="category">
+										<a href="/">Туризм</a>
+									</div>
+
+									<div class="category">
+										<a href="/">Одежда</a>
+									</div>
+
+									<div class="category">
+										<a href="/">Обувь</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="account">
+							<!-- <a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+								<span>Кабинет</span>
+							</a> -->
+
+							<button class="btn modal_btn" data-modal="login_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+								<span>Кабинет</span>
+							</button>
+						</div>
+
+						<div class="favorite">
+							<a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+								<span class="count">13</span>
+								<span>Избранное</span>
+							</a>
+						</div>
+
+						<div class="cart">
+							<a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+								<span class="count">3</span>
+								<span>15 600 тнг</span>
+							</a>
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+
+						<div class="search">
+							<form action="">
+								<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+								<button type="submit" class="submit_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a>
+							<svg class="sep"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+
+							<span class="current">Корзина</span>
+						</div>
+
+						<h1 class="page_title default">Корзина</h1>
+					</div>
+				</section>
+
+
+				<section class="cart_info block">
+					<div class="cont">
+						<button class="clear_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_clear_cart"></use></svg>
+							<span>Очистить корзину</span>
+						</button>
+
+						<div class="table_wrap">
+							<table>
+								<thead>
+									<tr>
+										<th colspan="2">Товар</th>
+										<th>Стоимость товара</th>
+										<th>Количество</th>
+										<th>Общая стоимость</th>
+										<th></th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td class="thumb">
+											<a href="/" target="_blank">
+												<img data-src="images/tmp/product_thumb2.jpg" alt="" class="lazyload">
+											</a>
+										</td>
+
+										<td class="info">
+											<div class="name">
+												<a href="/" target="_blank">Куртка Deerhunter Rusky 2.G m/D (4в1) AP-Xtra</a>
+											</div>
+
+											<div class="articul">Артикул: CDB00028579</div>
+
+											<div class="size">
+												Размер: <span>M</span>
+											</div>
+
+											<div class="color">
+												Цвет: <span>Камуфляж</span>
+												<img src="images/tmp/product_color4.jpg" alt="">
+											</div>
+										</td>
+
+										<td class="price" data-column="Стоимость товара">
+											<div>
+												<div>116 380 тнг</div>
+												<div class="old">124 050 тнг</div>
+											</div>
+										</td>
+
+										<td class="amount" data-column="Количество">
+											<div class="box">
+												<button type="button" class="btn minus">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+												</button>
+
+												<input type="text" value="1" class="input"
+												  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+												<button type="button" class="btn plus">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+												</button>
+											</div>
+										</td>
+
+										<td class="price total" data-column="Общая стоимость">
+											<div>
+												<div>116 380 тнг</div>
+											</div>
+										</td>
+
+										<td class="delete">
+											<button class="btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+												<span>Удалить товар из корзины</span>
+											</button>
+										</td>
+									</tr>
+
+
+									<tr>
+										<td class="thumb">
+											<a href="/" target="_blank">
+												<img data-src="images/tmp/product_thumb1.jpg" alt="" class="lazyload">
+											</a>
+										</td>
+
+										<td class="info">
+											<div class="name">
+												<a href="/" target="_blank">Трекинговые ботинки Crispi Monaco GTX</a>
+											</div>
+
+											<div class="articul">Артикул: Р891383</div>
+
+											<div class="size">
+												Размер: <span>42</span>
+											</div>
+
+											<div class="color">
+												Материал: <span>Кожа, резина</span>
+											</div>
+										</td>
+
+										<td class="price" data-column="Стоимость товара">
+											<div>
+												<div>114 200 тнг</div>
+												<div class="old">121 630 тнг</div>
+											</div>
+										</td>
+
+										<td class="amount" data-column="Количество">
+											<div class="box">
+												<button type="button" class="btn minus">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+												</button>
+
+												<input type="text" value="1" class="input"
+												  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+												<button type="button" class="btn plus">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+												</button>
+											</div>
+										</td>
+
+										<td class="price total" data-column="Общая стоимость">
+											<div>
+												<div>114 200 тнг</div>
+											</div>
+										</td>
+
+										<td class="delete">
+											<button class="btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+												<span>Удалить товар из корзины</span>
+											</button>
+										</td>
+									</tr>
+
+
+									<tr>
+										<td class="thumb">
+											<a href="/" target="_blank">
+												<img data-src="images/tmp/product_thumb6.jpg" alt="" class="lazyload">
+											</a>
+										</td>
+
+										<td class="info">
+											<div class="name">
+												<a href="/" target="_blank">Сумка Blaser для трофеев</a>
+											</div>
+
+											<div class="articul">Артикул: 35088-АН</div>
+
+											<div class="size">
+												Размер: <span>42 х 60 х 30 см</span>
+											</div>
+
+											<div class="color">
+												Объем: <span>15 л</span>
+											</div>
+										</td>
+
+										<td class="price" data-column="Стоимость товара">
+											<div>
+												<div>109 266 тнг
+												</div>
+											</div>
+										</td>
+
+										<td class="amount" data-column="Количество">
+											<div class="box">
+												<button type="button" class="btn minus">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+												</button>
+
+												<input type="text" value="2" class="input"
+												  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+												<button type="button" class="btn plus">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+												</button>
+											</div>
+										</td>
+
+										<td class="price total" data-column="Общая стоимость">
+											<div>
+												<div>218 532 тнг</div>
+											</div>
+										</td>
+
+										<td class="delete">
+											<button class="btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+												<span>Удалить товар из корзины</span>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+
+								<tfoot>
+									<tr>
+										<td colspan="3"></td>
+
+										<td class="label">Итого к оплате</td>
+
+										<td class="price total" colspan="2">
+											<div>
+												<div>449 112 тнг</div>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="checkout">
+					<div class="cont">
+						<form action="" class="form">
+							<div class="section">
+								<div class="title">Данные покупателя</div>
+
+								<div class="columns">
+									<div class="line width1of3">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Фамилия">
+										</div>
+									</div>
+
+									<div class="line width1of3">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Имя *">
+										</div>
+									</div>
+
+									<div class="line width1of3">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Отчество">
+										</div>
+									</div>
+
+									<div class="line width1of3">
+										<div class="field">
+											<input type="tel" name="" value="" class="input" placeholder="Телефон *">
+										</div>
+									</div>
+
+									<div class="line width1of3">
+										<div class="field">
+											<input type="email" name="" value="" class="input" placeholder="E-mail *">
+										</div>
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="field">
+										<textarea name="" placeholder="Комментарий"></textarea>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="section">
+								<div class="title">Оплата</div>
+
+								<div class="methods">
+									<div class="field">
+										<label>
+											<input type="radio" name="payment_method" checked>
+											<div class="check"></div>
+											<div>Онлайн оплата на сайте</div>
+										</label>
+									</div>
+
+									<div class="field">
+										<label>
+											<input type="radio" name="payment_method">
+											<div class="check"></div>
+											<div>Оплата при получении</div>
+										</label>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="section">
+								<div class="title">Доставка</div>
+
+								<div class="methods">
+									<div class="field">
+										<label>
+											<input type="radio" name="delivery_method">
+											<div class="check"></div>
+											<div>Самовывоз</div>
+										</label>
+									</div>
+
+									<div class="field">
+										<label>
+											<input type="radio" name="delivery_method" checked>
+											<div class="check"></div>
+											<div>Курьерская служба компании</div>
+										</label>
+									</div>
+
+									<div class="field">
+										<label>
+											<input type="radio" name="delivery_method">
+											<div class="check"></div>
+											<div>Транспортная компания</div>
+										</label>
+									</div>
+								</div>
+
+								<div class="notice">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+
+									<span>Доставка не входит в итоговую стоимость заказа и оплачивается отдельно после согласования с оператором.</span>
+								</div>
+							</div>
+
+
+							<div class="section">
+								<div class="columns">
+									<div class="line width1of3 min_m">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Город">
+										</div>
+									</div>
+
+									<div class="line width1of3 min_m">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Улица">
+										</div>
+									</div>
+
+									<div class="line width1of3 min_m mob_big">
+										<div class="columns">
+											<div class="field">
+												<input type="number" name="" value="" class="input" placeholder="Дом">
+											</div>
+
+											<div class="field">
+												<input type="number" name="" value="" class="input" placeholder="Квартира/офис">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="line agree">
+									<label class="checkbox">
+										<input type="checkbox" name="agree">
+										<div class="check"></div>
+
+										<div>Соглашаюсь на обработку моих  персональных  данных и принимаю <a href="/" target="_blank">Политику конфиденциальности</a>.</div>
+									</label>
+								</div>
+
+								<div class="submit">
+									<button type="submit" class="submit_btn">КУПИТЬ</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+
+					<img data-src="images/bg_checkout.png" alt="" class="bg lazyload">
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="col">
+						<div class="logo">
+							<img src="images/footer_logo.svg" alt="">
+						</div>
+
+						<div class="socials">
+							<div class="label">Мы в социальных сетях</div>
+
+							<div class="items">
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="copyright">&copy; 2023 ООО «Orca». Все права защищены.</div>
+
+						<div class="privacy_policy_link">
+							<a href="/">Политика конфиденцальности</a>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Покупателю</div>
+
+						<div class="items">
+							<div><a href="/">О компании</a></div>
+							<div><a href="/">Новости</a></div>
+							<div><a href="/">Доставка и оплата</a></div>
+							<div><a href="/">Контакты </a></div>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Туризм</div>
+
+						<div class="items">
+							<div><a href="/">Мужская одежда</a></div>
+							<div><a href="/">Женскя одежда</a></div>
+							<div><a href="/">Товары для туризма</a></div>
+							<div><a href="/">Аксессуары</a></div>
+							<div><a href="/">Обувь</a></div>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Охота</div>
+
+						<div class="items">
+							<div><a href="/">Мужская одежда</a></div>
+							<div><a href="/">Женскя одежда</a></div>
+							<div><a href="/">Аксессуары</a></div>
+							<div><a href="/">Товары для охоты</a></div>
+							<div><a href="/">Обувь</a></div>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Рыбалка</div>
+
+						<div class="items">
+							<div><a href="/">Мужская одежда</a></div>
+							<div><a href="/">Женскя одежда</a></div>
+							<div><a href="/">Товары для рыбалки</a></div>
+							<div><a href="/">Аксессуары</a></div>
+							<div><a href="/">Товары для охоты</a></div>
+						</div>
+					</div>
+				</div>
+
+				<img data-src="images/bg_footer.png" alt="" class="bg lazyload">
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Обратный звонок</div>
+
+			<form action="" class="form">
+				<div class="columns">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Телефон или e-mail">
+						</div>
+					</div>
+				</div>
+
+				<div class="line min_m">
+					<div class="field">
+						<textarea name="" placeholder="Сообщение"></textarea>
+					</div>
+				</div>
+
+				<div class="line agree">
+					<label class="checkbox">
+						<input type="checkbox" name="agree">
+						<div class="check"></div>
+
+						<div>Соглашаюсь на обработку моих  персональных  данных и принимаю <a href="/" target="_blank">Политику конфиденциальности</a>.</div>
+					</label>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal mini" id="login_modal">
+			<div class="modal_title">Авторизация</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Логин">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ВОЙТИ</button>
+				</div>
+			</form>
+
+			<div class="btns">
+				<button class="btn modal_btn" data-modal="register_modal">Зарегистрироваться</button>
+
+				<div class="sep"></div>
+
+				<button class="btn modal_btn" data-modal="recovery_modal">Восстановить пароль</button>
+			</div>
+		</section>
+
+
+		<section class="modal mini" id="register_modal">
+			<div class="modal_title">Регистрация</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Имя">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Фамилия">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Телефон">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль еще раз">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+				</div>
+			</form>
+
+			<div class="btns">
+				<button class="btn modal_btn" data-modal="login_modal">У меня уже есть аккаунт</button>
+			</div>
+		</section>
+
+
+		<section class="modal mini" id="recovery_modal">
+			<div class="modal_title">Восстановление пароля</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ВОССТАНОВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/sticky-kit.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="/favicon.png">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#1f394c">
+		<meta name="theme-color" content="#1f394c">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="mob_close_btn"></button>
+
+					<div class="scroll">
+						<div class="data">
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+							</div>
+
+							<div class="cont row">
+								<div class="links">
+									<div><a href="/">О компании</a></div>
+									<div><a href="/">Новости</a></div>
+									<div><a href="/">Доставка и оплата</a></div>
+									<div><a href="/">Контакты</a></div>
+								</div>
+
+								<div class="phones">
+									<div><a href="tel:89152570707">8 915 257-07-07</a></div>
+
+									<div><a href="tel:89152570000" class="whatsapp_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									</a></div>
+
+									<div><a href="tel:89152570000">8 915 257-00-00</a></div>
+								</div>
+							</div>
+
+							<div class="cont row">
+								<div class="search">
+									<form action="">
+										<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+										<button type="submit" class="submit_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+										</button>
+									</form>
+								</div>
+
+								<div class="col">
+									<button class="callback_btn modal_btn" data-modal="callback_modal">Обратный звонок</button>
+
+									<div class="account">
+										<!-- <a href="/">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+											<span>Кабинет</span>
+										</a> -->
+
+										<button class="btn modal_btn" data-modal="login_modal">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+											<span>Кабинет</span>
+										</button>
+									</div>
+
+									<div class="favorite">
+										<a href="/">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span class="count">13</span>
+											<span>Избранное</span>
+										</a>
+									</div>
+
+									<div class="cart">
+										<a href="/">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+											<span class="count">3</span>
+											<span>15 600 тнг</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cont">
+							<nav class="categories">
+								<div class="col">
+									<div class="category modal_cont">
+										<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+											<span>Каталог</span>
+										</button>
+
+										<div class="mini_modal" id="catalog_modal">
+											<div class="cont">
+												<div class="row">
+													<div>
+														<div class="main">
+															<a href="/">Одежда</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Куртки, Дождевики</a></div>
+															<div><a href="/">Толстовки и худи</a></div>
+															<div><a href="/">Футболки</a></div>
+															<div><a href="/">Брюки, комбинезоны и шорты</a></div>
+															<div><a href="/">Термобелье</a></div>
+															<div><a href="/">Костюмы</a></div>
+															<div><a href="/">Рубашки</a></div>
+															<div><a href="/">Головные уборы</a></div>
+															<div><a href="/">Перчатки</a></div>
+															<div><a href="/">Носки</a></div>
+															<div><a href="/">Аксессуары</a></div>
+														</div>
+													</div>
+
+													<div>
+														<div class="main">
+															<a href="/">Обувь</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Вейдерсы и забродники</a></div>
+															<div><a href="/">Сапоги</a></div>
+															<div><a href="/">Ботинки и полуботинки</a></div>
+															<div><a href="/">Кроссовки</a></div>
+															<div><a href="/">Кеды</a></div>
+															<div><a href="/">Шлёпанцы и тапочки</a></div>
+															<div><a href="/">Гамаши</a></div>
+															<div><a href="/">Стельки для обуви</a></div>
+															<div><a href="/">Аксессуары для обуви</a></div>
+														</div>
+													</div>
+
+													<div>
+														<div class="main">
+															<a href="/">Туризм</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Палатки и тенты</a></div>
+															<div><a href="/">Спальные мешки</a></div>
+															<div><a href="/">Коврики (Карематы)</a></div>
+															<div><a href="/">Рюкзаки</a></div>
+															<div><a href="/">Сумки</a></div>
+															<div><a href="/">Ножи и топоры</a></div>
+															<div><a href="/">Посуда и термосы</a></div>
+															<div><a href="/">Кемпинговая мебель</a></div>
+															<div><a href="/">Фонари</a></div>
+															<div><a href="/">Трекинговые палки</a></div>
+														</div>
+													</div>
+
+													<div>
+														<div class="main">
+															<a href="/">Рыбалка</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Троллинг и даунриггеры</a></div>
+															<div><a href="/">Эхолоты, кораблики и аксессуары</a></div>
+															<div><a href="/">Держатели, крепления, треноги для удочек</a></div>
+															<div><a href="/">Удилища штекерные</a></div>
+															<div><a href="/">Удилища телескопические</a></div>
+															<div><a href="/">Катушки с передним фрикционом</a></div>
+															<div><a href="/">Катушки с задним фрикционом</a></div>
+															<div><a href="/">Катушки мультипликаторные</a></div>
+															<div><a href="/">Катушки нахлыстовые</a></div>
+															<div><a href="/">Леска</a></div>
+															<div><a href="/">Зимняя леска</a></div>
+															<div><a href="/">Приманка</a></div>
+															<div><a href="/">Разное для рыбалки</a></div>
+															<div><a href="/">Разное для зимней рыбалки</a></div>
+															<div><a href="/">Удилища зимние</a></div>
+															<div><a href="/">Поплавки</a></div>
+															<div><a href="/">Чехлы кейсы</a></div>
+															<div><a href="/">Блесны</a></div>
+															<div><a href="/">Крючки</a></div>
+															<div><a href="/">Катушки зимние</a></div>
+															<div><a href="/">Показать еще</a></div>
+														</div>
+													</div>
+
+													<div>
+														<div class="main">
+															<a href="/">Охота и аксессуары для оружия</a>
+														</div>
+
+														<div class="items">
+															<div><a href="/">Чехлы и кейсы, ремни, патронташи, антабки</a></div>
+															<div><a href="/">Аксессуары для пневматического оружия</a></div>
+															<div><a href="/">Аксессуары для арбалетов и луков</a></div>
+															<div><a href="/">Аксессуары для оружия</a></div>
+															<div><a href="/">Сошки</a></div>
+															<div><a href="/">Оптика и аксессуары</a></div>
+															<div><a href="/">Лазерные целеуказатели</a></div>
+															<div><a href="/">Мишени</a></div>
+															<div><a href="/">Уход за оружием и Инструменты</a></div>
+															<div><a href="/">Станки пристрелочные и упоры</a></div>
+															<div><a href="/">Наушники и очки</a></div>
+															<div><a href="/">Снаряжение патронов</a></div>
+															<div><a href="/">Подсадные утки, гуси и т.д.</a></div>
+															<div><a href="/">Манки</a></div>
+															<div><a href="/">Аксессуары для собак</a></div>
+															<div><a href="/">Скрадки</a></div>
+															<div><a href="/">Охотничьи камеры</a></div>
+															<div><a href="/">Капканы</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="category">
+										<a href="/">Бренды</a>
+									</div>
+
+									<div class="category">
+										<a href="/">Охота</a>
+									</div>
+
+									<div class="category">
+										<a href="/">Рыбалка</a>
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="category">
+										<a href="/">Туризм</a>
+									</div>
+
+									<div class="category">
+										<a href="/">Одежда</a>
+									</div>
+
+									<div class="category">
+										<a href="/">Обувь</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="account">
+							<!-- <a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+								<span>Кабинет</span>
+							</a> -->
+
+							<button class="btn modal_btn" data-modal="login_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+								<span>Кабинет</span>
+							</button>
+						</div>
+
+						<div class="favorite">
+							<a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+								<span class="count">13</span>
+								<span>Избранное</span>
+							</a>
+						</div>
+
+						<div class="cart">
+							<a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+								<span class="count">3</span>
+								<span>15 600 тнг</span>
+							</a>
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+
+						<div class="search">
+							<form action="">
+								<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+								<button type="submit" class="submit_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="main_slider block">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="cont">
+									<a href="/" class="link">
+										<div class="data">
+											<div class="category">Трекинговые ботинки</div>
+
+											<div class="product_name">Сrispi Oasi GTX</div>
+
+											<div class="desc">Идеaльно пoдходят для охоты в движeнии нa xолмиcтой меcтнocти и для вылaзок в сaмыe непрoxодимыe<br> и неoбpаботанные леca.</div>
+
+											<div class="btn">
+												<span>В каталог</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+											</div>
+										</div>
+
+										<div class="image">
+											<img src="images/tmp/main_slider_img.jpg" alt="" loading="lazy">
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="cont">
+									<a href="/" class="link">
+										<div class="data">
+											<div class="category">Трекинговые ботинки</div>
+
+											<div class="product_name">Сrispi Oasi GTX</div>
+
+											<div class="desc">Идеaльно пoдходят для охоты в движeнии нa xолмиcтой меcтнocти и для вылaзок в сaмыe непрoxодимыe<br> и неoбpаботанные леca.</div>
+
+											<div class="btn">
+												<span>В каталог</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+											</div>
+										</div>
+
+										<div class="image">
+											<img src="images/tmp/main_slider_img.jpg" alt="" loading="lazy">
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="cont">
+									<a href="/" class="link">
+										<div class="data">
+											<div class="category">Трекинговые ботинки</div>
+
+											<div class="product_name">Сrispi Oasi GTX</div>
+
+											<div class="desc">Идеaльно пoдходят для охоты в движeнии нa xолмиcтой меcтнocти и для вылaзок в сaмыe непрoxодимыe<br> и неoбpаботанные леca.</div>
+
+											<div class="btn">
+												<span>В каталог</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+											</div>
+										</div>
+
+										<div class="image">
+											<img src="images/tmp/main_slider_img.jpg" alt="" loading="lazy">
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="cont">
+									<a href="/" class="link">
+										<div class="data">
+											<div class="category">Трекинговые ботинки</div>
+
+											<div class="product_name">Сrispi Oasi GTX</div>
+
+											<div class="desc">Идеaльно пoдходят для охоты в движeнии нa xолмиcтой меcтнocти и для вылaзок в сaмыe непрoxодимыe<br> и неoбpаботанные леca.</div>
+
+											<div class="btn">
+												<span>В каталог</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+											</div>
+										</div>
+
+										<div class="image">
+											<img src="images/tmp/main_slider_img.jpg" alt="" loading="lazy">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-button-prev">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+						</div>
+
+						<div class="swiper-button-next">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+						</div>
+
+						<div class="swiper-pagination"></div>
+					</div>
+				</section>
+
+
+				<section class="about_block block">
+					<div class="cont">
+						<div class="title">Orсa предлагает большой выбор товаров и аксессуаров для туризма, охоты и рыбалки</div>
+
+						<div class="desc">Магазин является официальным дилером брендов-производителей. Наш опыт позволяет динамично реагировать на современные тенденции рынка и обеспечивать клиентов качественными  новинкам рынка.</div>
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="item">
+										<img src="images/tmp/client_logo1.png" alt="" loading="lazy">
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<img src="images/tmp/client_logo2.png" alt="" loading="lazy">
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<img src="images/tmp/client_logo3.png" alt="" loading="lazy">
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<img src="images/tmp/client_logo1.png" alt="" loading="lazy">
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<img src="images/tmp/client_logo2.png" alt="" loading="lazy">
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="item">
+										<img src="images/tmp/client_logo3.png" alt="" loading="lazy">
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-button-prev">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</div>
+
+							<div class="swiper-button-next">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="categories_wall block">
+					<div class="cont">
+						<div class="row">
+							<a href="/" class="category middle">
+								<div class="thumb">
+									<img data-src="images/tmp/category_thumb1.jpg" alt="" class="lazyload">
+								</div>
+
+								<div class="arr">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+								</div>
+							</a>
+
+							<a href="/" class="category middle">
+								<div class="thumb">
+									<img data-src="images/tmp/category_thumb2.jpg" alt="" class="lazyload">
+								</div>
+
+								<div class="arr">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+								</div>
+							</a>
+
+							<a href="/" class="category big">
+								<div class="thumb">
+									<img data-src="images/tmp/category_thumb3.jpg" alt="" class="lazyload">
+								</div>
+
+								<div class="arr">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+								</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="thumb">
+									<img data-src="images/tmp/category_thumb4.jpg" alt="" class="lazyload">
+								</div>
+
+								<div class="arr">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+								</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="thumb">
+									<img data-src="images/tmp/category_thumb5.jpg" alt="" class="lazyload">
+								</div>
+
+								<div class="arr">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+								</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="thumb">
+									<img data-src="images/tmp/category_thumb6.jpg" alt="" class="lazyload">
+								</div>
+
+								<div class="arr">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_double_arr_hor"></use></svg>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<img data-src="images/bg_categories_wall.png" alt="" class="bg lazyload">
+				</section>
+
+
+				<section class="products block">
+					<div class="cont">
+						<div class="block_head center">
+							<div class="title">НОВИНКИ</div>
+						</div>
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb1.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Трекинговые ботинки Crispi Monaco GTX</a>
+											</div>
+
+											<div class="price">
+												<div>114 200 тнг</div>
+												<div class="old">121 630 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb2.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Куртка Deerhunter Rusky 2.G m/D (4в1) AP-Xtra</a>
+											</div>
+
+											<div class="price">
+												<div>114 350 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+										</div>
+
+										<button class="favorite_btn active">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb3.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Держатель для 3х удочек scotty triple ROD holder</a>
+											</div>
+
+											<div class="price">
+												<div>66 020 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Штатив для оружия Caldwell 51-107см</a>
+											</div>
+
+											<div class="price">
+												<div>116 380 тнг</div>
+												<div class="old">124 050 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb1.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Трекинговые ботинки Crispi Monaco GTX</a>
+											</div>
+
+											<div class="price">
+												<div>114 200 тнг</div>
+												<div class="old">121 630 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb2.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Куртка Deerhunter Rusky 2.G m/D (4в1) AP-Xtra</a>
+											</div>
+
+											<div class="price">
+												<div>114 350 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+										</div>
+
+										<button class="favorite_btn active">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb3.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Держатель для 3х удочек scotty triple ROD holder</a>
+											</div>
+
+											<div class="price">
+												<div>66 020 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Штатив для оружия Caldwell 51-107см</a>
+											</div>
+
+											<div class="price">
+												<div>116 380 тнг</div>
+												<div class="old">124 050 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-button-prev">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</div>
+
+							<div class="swiper-button-next">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="all_link">
+						<a href="/">
+							<span>Посмотреть все</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+						</a>
+					</div>
+				</section>
+
+
+				<section class="products block">
+					<div class="cont">
+						<div class="block_head center">
+							<div class="title">АКЦИИ</div>
+						</div>
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb5.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Чехол зимний Эхолот Deeper Smartphone Case 2.0</a>
+											</div>
+
+											<div class="price">
+												<div>24 863 тнг</div>
+												<div class="old">32 150 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb6.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Сумка Blaser для трофеев</a>
+											</div>
+
+											<div class="price">
+												<div>109 266 тнг</div>
+												<div class="old">32 150 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb7.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Держатель для 3х удочек scotty triple ROD holder</a>
+											</div>
+
+											<div class="price">
+												<div>62 488 тнг</div>
+												<div class="old">64 360 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb8.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Сумка Sitka Rambler Pyrite osfa</a>
+											</div>
+
+											<div class="price">
+												<div>202 821 тнг</div>
+												<div class="old">210 530 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb5.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Чехол зимний Эхолот Deeper Smartphone Case 2.0</a>
+											</div>
+
+											<div class="price">
+												<div>24 863 тнг</div>
+												<div class="old">32 150 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb6.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Сумка Blaser для трофеев</a>
+											</div>
+
+											<div class="price">
+												<div>109 266 тнг</div>
+												<div class="old">32 150 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker yellow">НОВИНКА</div></div>
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb7.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Держатель для 3х удочек scotty triple ROD holder</a>
+											</div>
+
+											<div class="price">
+												<div>62 488 тнг</div>
+												<div class="old">64 360 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="swiper-slide">
+									<div class="product">
+										<div class="stickers">
+											<div><div class="sticker red">АКЦИЯ</div></div>
+										</div>
+
+										<button class="favorite_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+											<span>В избранное</span>
+										</button>
+
+										<div class="thumb">
+											<img data-src="images/tmp/product_thumb8.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="info">
+											<div class="name">
+												<a href="/">Сумка Sitka Rambler Pyrite osfa</a>
+											</div>
+
+											<div class="price">
+												<div>202 821 тнг</div>
+												<div class="old">210 530 тнг</div>
+											</div>
+
+											<div class="buy">
+												<div class="amount">
+													<button type="button" class="btn minus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+
+													<input type="text" value="1" class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</div>
+
+												<button class="buy_btn">
+													<span>В КОРЗИНУ</span>
+													<span>В КОРЗИНE</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-button-prev">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</div>
+
+							<div class="swiper-button-next">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="all_link">
+						<a href="/">
+							<span>Посмотреть все</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+						</a>
+					</div>
+				</section>
+
+
+				<section class="advantages block">
+					<div class="cont">
+						<div class="block_head center">
+							<div class="title">НАШИ ПРЕИМУЩЕСТВА</div>
+						</div>
+
+						<div class="row">
+							<div class="item">
+								<div class="icon">
+									<img data-src="images/ic_advantage1.svg" alt="" class="lazyload">
+								</div>
+
+								<div>Широкий ассортимент<br> продукции</div>
+							</div>
+
+							<div class="item">
+								<div class="icon">
+									<img data-src="images/ic_advantage2.svg" alt="" class="lazyload">
+								</div>
+
+								<div>Выгодные цены<br> для наших клиентов</div>
+							</div>
+
+							<div class="item">
+								<div class="icon">
+									<img data-src="images/ic_advantage3.svg" alt="" class="lazyload">
+								</div>
+
+								<div>Качественный сервис<br> и помощь в выборе</div>
+							</div>
+
+							<div class="item">
+								<div class="icon">
+									<img data-src="images/ic_advantage4.svg" alt="" class="lazyload">
+								</div>
+
+								<div>Индивидуальный подход<br> к доставке</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="articles block">
+					<div class="cont">
+						<div class="block_head center">
+							<div class="title">НОВОСТИ</div>
+						</div>
+
+						<div class="row mob_scroll">
+							<div class="article">
+								<div class="thumb">
+									<img data-src="images/tmp/article_thumb1.jpg" alt="" class="lazyload">
+
+									<div class="date">12.11.2023</div>
+								</div>
+
+								<div class="name">
+									<a href="/">Запрет на посещение лесов снят в некоторых районах</a>
+								</div>
+
+								<div class="desc">Министерство лесного хозяйства сообщает, что в 8 районах республики снят запрет на посещение лесов.</div>
+							</div>
+
+							<div class="article">
+								<div class="thumb">
+									<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lazyload">
+
+									<div class="date">25.10.2023</div>
+								</div>
+
+								<div class="name">
+									<a href="/">Возвращение легендарной модели</a>
+								</div>
+
+								<div class="desc">У любителей подледного лова есть такой термин «глухозимье». Он означает полное или почти  полное отсутствие клева во время рыбной ловли в зимний период.</div>
+							</div>
+
+							<div class="article">
+								<div class="thumb">
+									<img data-src="images/tmp/article_thumb3.jpg" alt="" class="lazyload">
+
+									<div class="date">03.10.2023</div>
+								</div>
+
+								<div class="name">
+									<a href="/">Эксклюзив 2023 года: выход на рынок сразу двух новинок</a>
+								</div>
+
+								<div class="desc">Отправиться в даже непродолжительный туристический поход без аптечки — превосходная  идея, но она таит в себе несколько неожиданных сюрпризов.</div>
+							</div>
+
+							<div class="article">
+								<div class="thumb">
+									<img data-src="images/tmp/article_thumb4.jpg" alt="" class="lazyload">
+
+									<div class="date">19.08.2023</div>
+								</div>
+
+								<div class="name">
+									<a href="/">Открытие охоты на куропатку серую рябчика и фазана</a>
+								</div>
+
+								<div class="desc">С первой субботы сентября открывается сезон охоты на рябчика и куропатку серую, который продлится по второе воскресенье декабря.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="all_link no_line">
+						<a href="/">
+							<span>Все новости</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+						</a>
+					</div>
+				</section>
+
+
+				<section class="consult">
+					<div class="cont">
+						<div class="block_head center default">
+							<div class="title">Нужна консультация?</div>
+						</div>
+
+						<form action="" class="form">
+							<div class="columns">
+								<div class="line">
+									<div class="field">
+										<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="field">
+										<input type="text" name="" value="" class="input" placeholder="Телефон или e-mail">
+									</div>
+								</div>
+							</div>
+
+							<div class="line min_m">
+								<div class="field">
+									<textarea name="" placeholder="Сообщение или вопрос"></textarea>
+								</div>
+							</div>
+
+							<div class="line file min_m">
+								<div class="field">
+									<label>
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_file"></use></svg>
+										<span>Прикрепить файл</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="line agree">
+								<label class="checkbox">
+									<input type="checkbox" name="agree">
+									<div class="check"></div>
+
+									<div>Соглашаюсь на обработку моих  персональных  данных и принимаю <a href="/" target="_blank">Политику конфиденциальности</a>.</div>
+								</label>
+							</div>
+
+							<div class="submit">
+								<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+							</div>
+						</form>
+					</div>
+
+					<img data-src="images/bg_consult.png" alt="" class="bg lazyload">
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="col">
+						<div class="logo">
+							<img src="images/footer_logo.svg" alt="">
+						</div>
+
+						<div class="socials">
+							<div class="label">Мы в социальных сетях</div>
+
+							<div class="items">
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="copyright">&copy; 2023 ООО «Orca». Все права защищены.</div>
+
+						<div class="privacy_policy_link">
+							<a href="/">Политика конфиденцальности</a>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Покупателю</div>
+
+						<div class="items">
+							<div><a href="/">О компании</a></div>
+							<div><a href="/">Новости</a></div>
+							<div><a href="/">Доставка и оплата</a></div>
+							<div><a href="/">Контакты </a></div>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Туризм</div>
+
+						<div class="items">
+							<div><a href="/">Мужская одежда</a></div>
+							<div><a href="/">Женскя одежда</a></div>
+							<div><a href="/">Товары для туризма</a></div>
+							<div><a href="/">Аксессуары</a></div>
+							<div><a href="/">Обувь</a></div>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Охота</div>
+
+						<div class="items">
+							<div><a href="/">Мужская одежда</a></div>
+							<div><a href="/">Женскя одежда</a></div>
+							<div><a href="/">Аксессуары</a></div>
+							<div><a href="/">Товары для охоты</a></div>
+							<div><a href="/">Обувь</a></div>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Рыбалка</div>
+
+						<div class="items">
+							<div><a href="/">Мужская одежда</a></div>
+							<div><a href="/">Женскя одежда</a></div>
+							<div><a href="/">Товары для рыбалки</a></div>
+							<div><a href="/">Аксессуары</a></div>
+							<div><a href="/">Товары для охоты</a></div>
+						</div>
+					</div>
+				</div>
+
+				<img data-src="images/bg_footer.png" alt="" class="bg lazyload">
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Обратный звонок</div>
+
+			<form action="" class="form">
+				<div class="columns">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Телефон или e-mail">
+						</div>
+					</div>
+				</div>
+
+				<div class="line min_m">
+					<div class="field">
+						<textarea name="" placeholder="Сообщение"></textarea>
+					</div>
+				</div>
+
+				<div class="line agree">
+					<label class="checkbox">
+						<input type="checkbox" name="agree">
+						<div class="check"></div>
+
+						<div>Соглашаюсь на обработку моих  персональных  данных и принимаю <a href="/" target="_blank">Политику конфиденциальности</a>.</div>
+					</label>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal mini" id="login_modal">
+			<div class="modal_title">Авторизация</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Логин">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ВОЙТИ</button>
+				</div>
+			</form>
+
+			<div class="btns">
+				<button class="btn modal_btn" data-modal="register_modal">Зарегистрироваться</button>
+
+				<div class="sep"></div>
+
+				<button class="btn modal_btn" data-modal="recovery_modal">Восстановить пароль</button>
+			</div>
+		</section>
+
+
+		<section class="modal mini" id="register_modal">
+			<div class="modal_title">Регистрация</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Имя">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Фамилия">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Телефон">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль еще раз">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+				</div>
+			</form>
+
+			<div class="btns">
+				<button class="btn modal_btn" data-modal="login_modal">У меня уже есть аккаунт</button>
+			</div>
+		</section>
+
+
+		<section class="modal mini" id="recovery_modal">
+			<div class="modal_title">Восстановление пароля</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ВОССТАНОВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/sticky-kit.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
