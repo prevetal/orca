@@ -82,6 +82,19 @@
     }
 
 
+    .mob_header .logo
+    {
+        position: absolute;
+        top: 12px;
+        right: 0;
+        left: 0;
+
+        width: 60px;
+        height: 58px;
+        margin: 0 auto;
+    }
+
+
     .mob_header .logo img
     {
         width: 60px;
@@ -99,6 +112,22 @@
     .mob_header .phones .mob_hide
     {
         display: none;
+    }
+
+
+    .mob_header .account,
+    .mob_header .favorite,
+    .mob_header .cart
+    {
+        order: 2;
+
+        margin-left: 16px;
+    }
+
+
+    .mob_header .search
+    {
+        order: 3;
     }
 
 
